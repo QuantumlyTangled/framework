@@ -39,6 +39,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -70,45 +72,45 @@
 							<a href="https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation">module augmentation</a> so
 						custom ones are registered.</p>
 					</div>
-					<p>When a key&#39;s value is <code>never</code>, it means that it does not take any context, which allows you to pass its identifier as
+					<p>When a key’s value is <code>never</code>, it means that it does not take any context, which allows you to pass its identifier as
 						a bare string (e.g. <code>preconditions: [&#39;NSFW&#39;]</code>), however, if context is required, a non-<code>never</code> type should be passed,
 						which will type {@link PreconditionContainerArray#append} and require an object with the name and a <code>context</code> with
 					the defined type.</p>
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
-						<dd><pre><code class="language-typescript"><span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">module</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@sapphire/framework&#039;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">Preconditions</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #008000">// A precondition named `Moderator` which does not read `context`:</span>
-<span style="color: #000000">    </span><span style="color: #001080">Moderator</span><span style="color: #000000">: </span><span style="color: #267F99">never</span><span style="color: #000000">;</span>
+						<dd><pre><code class="language-typescript"><span style="color: #D73A49">declare</span><span style="color: #24292E"> </span><span style="color: #D73A49">module</span><span style="color: #24292E"> </span><span style="color: #032F62">&#039;@sapphire/framework&#039;</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">interface</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Preconditions</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">    </span><span style="color: #6A737D">// A precondition named `Moderator` which does not read `context`:</span>
+<span style="color: #24292E">    </span><span style="color: #E36209">Moderator</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #005CC5">never</span><span style="color: #24292E">;</span>
 
-<span style="color: #000000">    </span><span style="color: #008000">// A precondition named `ChannelPermissions` which does read `context`:</span>
-<span style="color: #000000">    </span><span style="color: #001080">ChannelPermissions</span><span style="color: #000000">: {</span>
-<span style="color: #000000">      </span><span style="color: #001080">permissions</span><span style="color: #000000">: </span><span style="color: #267F99">Permissions</span><span style="color: #000000">;</span>
-<span style="color: #000000">    };</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
+<span style="color: #24292E">    </span><span style="color: #6A737D">// A precondition named `ChannelPermissions` which does read `context`:</span>
+<span style="color: #24292E">    </span><span style="color: #E36209">ChannelPermissions</span><span style="color: #D73A49">:</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">      </span><span style="color: #E36209">permissions</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Permissions</span><span style="color: #24292E">;</span>
+<span style="color: #24292E">    };</span>
+<span style="color: #24292E">  }</span>
+<span style="color: #24292E">}</span>
 
-<span style="color: #008000">// [✔] These are valid:</span>
-<span style="color: #001080">preconditions</span><span style="color: #000000">.</span><span style="color: #795E26">append</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Moderator&#039;</span><span style="color: #000000">);</span>
-<span style="color: #001080">preconditions</span><span style="color: #000000">.</span><span style="color: #795E26">append</span><span style="color: #000000">({ </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Moderator&#039;</span><span style="color: #000000"> });</span>
-<span style="color: #001080">preconditions</span><span style="color: #000000">.</span><span style="color: #795E26">append</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ChannelPermissions&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">context:</span><span style="color: #000000"> { </span><span style="color: #001080">permissions:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Permissions</span><span style="color: #000000">(</span><span style="color: #098658">8</span><span style="color: #000000">) }</span>
-<span style="color: #000000">});</span>
+<span style="color: #6A737D">// [✔] These are valid:</span>
+<span style="color: #24292E">preconditions.</span><span style="color: #6F42C1">append</span><span style="color: #24292E">(</span><span style="color: #032F62">&#039;Moderator&#039;</span><span style="color: #24292E">);</span>
+<span style="color: #24292E">preconditions.</span><span style="color: #6F42C1">append</span><span style="color: #24292E">({ name: </span><span style="color: #032F62">&#039;Moderator&#039;</span><span style="color: #24292E"> });</span>
+<span style="color: #24292E">preconditions.</span><span style="color: #6F42C1">append</span><span style="color: #24292E">({</span>
+<span style="color: #24292E">  name: </span><span style="color: #032F62">&#039;ChannelPermissions&#039;</span><span style="color: #24292E">,</span>
+<span style="color: #24292E">  context: { permissions: </span><span style="color: #D73A49">new</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Permissions</span><span style="color: #24292E">(</span><span style="color: #005CC5">8</span><span style="color: #24292E">) }</span>
+<span style="color: #24292E">});</span>
 
-<span style="color: #008000">// [X] These are invalid:</span>
-<span style="color: #001080">preconditions</span><span style="color: #000000">.</span><span style="color: #795E26">append</span><span style="color: #000000">({ </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Moderator&#039;</span><span style="color: #000000">, </span><span style="color: #001080">context:</span><span style="color: #000000"> {} });</span>
-<span style="color: #008000">// ➡ `never` keys do not accept `context`.</span>
+<span style="color: #6A737D">// [X] These are invalid:</span>
+<span style="color: #24292E">preconditions.</span><span style="color: #6F42C1">append</span><span style="color: #24292E">({ name: </span><span style="color: #032F62">&#039;Moderator&#039;</span><span style="color: #24292E">, context: {} });</span>
+<span style="color: #6A737D">// ➡ `never` keys do not accept `context`.</span>
 
-<span style="color: #001080">preconditions</span><span style="color: #000000">.</span><span style="color: #795E26">append</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;ChannelPermissions&#039;</span><span style="color: #000000">);</span>
-<span style="color: #008000">// ➡ non-`never` keys always require `context`, a string cannot be used.</span>
+<span style="color: #24292E">preconditions.</span><span style="color: #6F42C1">append</span><span style="color: #24292E">(</span><span style="color: #032F62">&#039;ChannelPermissions&#039;</span><span style="color: #24292E">);</span>
+<span style="color: #6A737D">// ➡ non-`never` keys always require `context`, a string cannot be used.</span>
 
-<span style="color: #001080">preconditions</span><span style="color: #000000">.</span><span style="color: #795E26">append</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ChannelPermissions&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">context:</span><span style="color: #000000"> { </span><span style="color: #001080">unknownProperty:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }</span>
-<span style="color: #000000">});</span>
-<span style="color: #008000">// ➡ mismatching `context` properties, `{ unknownProperty: number }` is not</span>
-<span style="color: #008000">// assignable to `{ permissions: Permissions }`.</span>
+<span style="color: #24292E">preconditions.</span><span style="color: #6F42C1">append</span><span style="color: #24292E">({</span>
+<span style="color: #24292E">  name: </span><span style="color: #032F62">&#039;ChannelPermissions&#039;</span><span style="color: #24292E">,</span>
+<span style="color: #24292E">  context: { unknownProperty: </span><span style="color: #005CC5">1</span><span style="color: #24292E"> }</span>
+<span style="color: #24292E">});</span>
+<span style="color: #6A737D">// ➡ mismatching `context` properties, `{ unknownProperty: number }` is not</span>
+<span style="color: #6A737D">// assignable to `{ permissions: Permissions }`.</span>
 </code></pre>
 						</dd>
 					</dl>
@@ -154,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">Cooldown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>delay<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>limit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>scope<span class="tsd-signature-symbol">?: </span><a href="../enums/BucketScope.html" class="tsd-signature-type" data-tsd-kind="Enumeration">BucketScope</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L84">src/lib/structures/Precondition.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L84">src/lib/structures/Precondition.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -178,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">DMOnly<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L89">src/lib/structures/Precondition.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L89">src/lib/structures/Precondition.ts:89</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L90">src/lib/structures/Precondition.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L90">src/lib/structures/Precondition.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -198,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>News<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L91">src/lib/structures/Precondition.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L91">src/lib/structures/Precondition.ts:91</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>News<wbr>Thread<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L92">src/lib/structures/Precondition.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L92">src/lib/structures/Precondition.ts:92</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L93">src/lib/structures/Precondition.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L93">src/lib/structures/Precondition.ts:93</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +230,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Private<wbr>Thread<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L94">src/lib/structures/Precondition.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L94">src/lib/structures/Precondition.ts:94</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,7 +240,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Public<wbr>Thread<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L95">src/lib/structures/Precondition.ts:95</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L95">src/lib/structures/Precondition.ts:95</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -248,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Text<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L96">src/lib/structures/Precondition.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L96">src/lib/structures/Precondition.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -258,7 +260,7 @@
 					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Thread<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L97">src/lib/structures/Precondition.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L97">src/lib/structures/Precondition.ts:97</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -268,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">NSFW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L98">src/lib/structures/Precondition.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L98">src/lib/structures/Precondition.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -278,7 +280,7 @@
 					<div class="tsd-signature tsd-kind-icon">Permissions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>permissions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Permissions</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Precondition.ts#L99">src/lib/structures/Precondition.ts:99</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Precondition.ts#L99">src/lib/structures/Precondition.ts:99</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -352,7 +354,7 @@
 		</div>
 	</div>
 </div>
-<footer class="with-border-bottom">
+<footer>
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
@@ -384,9 +386,6 @@
 		</div>
 	</div>
 </footer>
-<div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 </body>

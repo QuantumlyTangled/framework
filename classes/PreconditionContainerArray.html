@@ -39,6 +39,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -69,7 +71,7 @@
 						<p>An <a href="../interfaces/IPreconditionContainer.html">IPreconditionContainer</a> that defines an array of multiple <a href="../interfaces/IPreconditionContainer.html">IPreconditionContainer</a>s.</p>
 					</div>
 					<p>By default, array containers run either of two conditions: AND and OR (<a href="../enums/PreconditionRunCondition.html">PreconditionRunCondition</a>), the top level
-					will always default to AND, where the nested one flips the logic (OR, then children arrays are AND, then OR...).</p>
+					will always default to AND, where the nested one flips the logic (OR, then children arrays are AND, then OR…).</p>
 					<p>This allows <code>[&#39;Connect&#39;, [&#39;Moderator&#39;, [&#39;DJ&#39;, &#39;SongAuthor&#39;]]]</code> to become a thrice-nested precondition container, where:</p>
 					<ul>
 						<li>Level 1: [Single(Connect), Array] runs AND, both containers must return a successful value.</li>
@@ -77,7 +79,7 @@
 						<li>Level 3: [Single(DJ), Single(SongAuthor)] runs AND, both containers must return a successful value.</li>
 					</ul>
 					<p>In other words, it is identical to doing:</p>
-					<pre><code class="language-typescript"><span style="color: #001080">Connect</span><span style="color: #000000"> &amp;&amp; (</span><span style="color: #001080">Moderator</span><span style="color: #000000"> || (</span><span style="color: #0070C1">DJ</span><span style="color: #000000"> &amp;&amp; </span><span style="color: #001080">SongAuthor</span><span style="color: #000000">));</span>
+					<pre><code class="language-typescript"><span style="color: #24292E">Connect </span><span style="color: #D73A49">&amp;&amp;</span><span style="color: #24292E"> (Moderator </span><span style="color: #D73A49">||</span><span style="color: #24292E"> (</span><span style="color: #005CC5">DJ</span><span style="color: #24292E"> </span><span style="color: #D73A49">&amp;&amp;</span><span style="color: #24292E"> SongAuthor));</span>
 </code></pre>
 					<dl class="tsd-comment-tags">
 						<dt>remark</dt>
@@ -153,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L127">src/lib/utils/preconditions/PreconditionContainerArray.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L127">src/lib/utils/preconditions/PreconditionContainerArray.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -178,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">entries<span class="tsd-signature-symbol">:</span> <a href="../interfaces/IPreconditionContainer.html" class="tsd-signature-type" data-tsd-kind="Interface">IPreconditionContainer</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L119">src/lib/utils/preconditions/PreconditionContainerArray.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L119">src/lib/utils/preconditions/PreconditionContainerArray.ts:119</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/PreconditionRunMode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PreconditionRunMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L113">src/lib/utils/preconditions/PreconditionContainerArray.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L113">src/lib/utils/preconditions/PreconditionContainerArray.ts:113</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">run<wbr>Condition<span class="tsd-signature-symbol">:</span> <a href="../enums/PreconditionRunCondition.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PreconditionRunCondition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L125">src/lib/utils/preconditions/PreconditionContainerArray.ts:125</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L125">src/lib/utils/preconditions/PreconditionContainerArray.ts:125</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +240,7 @@
 					<div class="tsd-signature tsd-kind-icon">conditions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/PreconditionRunCondition.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PreconditionRunCondition</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/IPreconditionCondition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPreconditionCondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L219">src/lib/utils/preconditions/PreconditionContainerArray.ts:219</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L219">src/lib/utils/preconditions/PreconditionContainerArray.ts:219</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -251,19 +253,19 @@
 							<dd><p>1.0.0</p>
 							</dd>
 							<dt>example</dt>
-							<dd><pre><code class="language-typescript"><span style="color: #008000">// Adding more kinds of conditions</span>
+							<dd><pre><code class="language-typescript"><span style="color: #6A737D">// Adding more kinds of conditions</span>
 
-<span style="color: #008000">// Set the new condition:</span>
-<span style="color: #001080">PreconditionContainerArray</span><span style="color: #000000">.</span><span style="color: #001080">conditions</span><span style="color: #000000">.</span><span style="color: #795E26">set</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #001080">PreconditionConditionRandom</span><span style="color: #000000">);</span>
+<span style="color: #6A737D">// Set the new condition:</span>
+<span style="color: #24292E">PreconditionContainerArray.conditions.</span><span style="color: #6F42C1">set</span><span style="color: #24292E">(</span><span style="color: #005CC5">2</span><span style="color: #24292E">, PreconditionConditionRandom);</span>
 
-<span style="color: #008000">// Augment Sapphire to add the new condition, in case of a JavaScript</span>
-<span style="color: #008000">// project, this can be moved to an `Augments.d.ts` (or any other name)</span>
-<span style="color: #008000">// file somewhere:</span>
-<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">module</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@sapphire/framework&#039;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">enum</span><span style="color: #000000"> </span><span style="color: #267F99">PreconditionRunCondition</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #0070C1">Random</span><span style="color: #000000"> = </span><span style="color: #098658">2</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
+<span style="color: #6A737D">// Augment Sapphire to add the new condition, in case of a JavaScript</span>
+<span style="color: #6A737D">// project, this can be moved to an `Augments.d.ts` (or any other name)</span>
+<span style="color: #6A737D">// file somewhere:</span>
+<span style="color: #D73A49">declare</span><span style="color: #24292E"> </span><span style="color: #D73A49">module</span><span style="color: #24292E"> </span><span style="color: #032F62">&#039;@sapphire/framework&#039;</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">enum</span><span style="color: #24292E"> </span><span style="color: #6F42C1">PreconditionRunCondition</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">    Random </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #005CC5">2</span>
+<span style="color: #24292E">  }</span>
+<span style="color: #24292E">}</span>
 </code></pre>
 							</dd>
 						</dl>
@@ -282,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L194">src/lib/utils/preconditions/PreconditionContainerArray.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L194">src/lib/utils/preconditions/PreconditionContainerArray.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,7 +314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L149">src/lib/utils/preconditions/PreconditionContainerArray.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L149">src/lib/utils/preconditions/PreconditionContainerArray.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,7 +351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L154">src/lib/utils/preconditions/PreconditionContainerArray.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L154">src/lib/utils/preconditions/PreconditionContainerArray.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -363,7 +365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L155">src/lib/utils/preconditions/PreconditionContainerArray.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L155">src/lib/utils/preconditions/PreconditionContainerArray.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -392,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L178">src/lib/utils/preconditions/PreconditionContainerArray.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L178">src/lib/utils/preconditions/PreconditionContainerArray.ts:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +431,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/IPreconditionContainer.html">IPreconditionContainer</a>.<a href="../interfaces/IPreconditionContainer.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/utils/preconditions/PreconditionContainerArray.ts#L167">src/lib/utils/preconditions/PreconditionContainerArray.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/utils/preconditions/PreconditionContainerArray.ts#L167">src/lib/utils/preconditions/PreconditionContainerArray.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -520,7 +522,7 @@
 		</div>
 	</div>
 </div>
-<footer class="with-border-bottom">
+<footer>
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
@@ -552,9 +554,6 @@
 		</div>
 	</div>
 </footer>
-<div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 </body>

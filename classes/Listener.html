@@ -39,6 +39,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -67,40 +69,40 @@
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>The base event class. This class is abstract and is to be extended by subclasses, which should implement the methods. In
-						Sapphire&#39;s workflow, listeners are called when the emitter they listen on emits a new message with the same event name.</p>
+						Sapphire’s workflow, listeners are called when the emitter they listen on emits a new message with the same event name.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
-						<dd><pre><code class="language-typescript"><span style="color: #008000">// TypeScript:</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Events</span><span style="color: #000000">, </span><span style="color: #001080">Listener</span><span style="color: #000000">, </span><span style="color: #001080">PieceContext</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@sapphire/framework&#039;</span><span style="color: #000000">;</span>
+						<dd><pre><code class="language-typescript"><span style="color: #6A737D">// TypeScript:</span>
+<span style="color: #D73A49">import</span><span style="color: #24292E"> { Events, Listener, PieceContext } </span><span style="color: #D73A49">from</span><span style="color: #24292E"> </span><span style="color: #032F62">&#039;@sapphire/framework&#039;</span><span style="color: #24292E">;</span>
 
-<span style="color: #008000">// Define a class extending `Listener`, then export it.</span>
-<span style="color: #008000">// NOTE: You can use `export default` or `export =` too.</span>
-<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">CoreListener</span><span style="color: #000000"> </span><span style="color: #0000FF">extends</span><span style="color: #000000"> </span><span style="color: #267F99">Listener</span><span style="color: #000000">&lt;</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">Events</span><span style="color: #000000">.</span><span style="color: #001080">Ready</span><span style="color: #000000">&gt; {</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">public</span><span style="color: #000000"> </span><span style="color: #0000FF">constructor</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">: </span><span style="color: #267F99">PieceContext</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">super</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">, { </span><span style="color: #001080">event:</span><span style="color: #000000"> </span><span style="color: #001080">Events</span><span style="color: #000000">.</span><span style="color: #001080">Ready</span><span style="color: #000000">, </span><span style="color: #001080">once:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
-<span style="color: #000000">  }</span>
+<span style="color: #6A737D">// Define a class extending `Listener`, then export it.</span>
+<span style="color: #6A737D">// NOTE: You can use `export default` or `export =` too.</span>
+<span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">CoreListener</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Listener</span><span style="color: #24292E">&lt;</span><span style="color: #D73A49">typeof</span><span style="color: #24292E"> Events.Ready&gt; {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">PieceContext</span><span style="color: #24292E">) {</span>
+<span style="color: #24292E">    </span><span style="color: #005CC5">super</span><span style="color: #24292E">(context, { event: Events.Ready, once: </span><span style="color: #005CC5">true</span><span style="color: #24292E"> });</span>
+<span style="color: #24292E">  }</span>
 
-<span style="color: #000000">  </span><span style="color: #0000FF">public</span><span style="color: #000000"> </span><span style="color: #795E26">run</span><span style="color: #000000">() {</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">container</span><span style="color: #000000">.</span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000"> ??= </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">container</span><span style="color: #000000">.</span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">user</span><span style="color: #000000">?.</span><span style="color: #001080">id</span><span style="color: #000000"> ?? </span><span style="color: #0000FF">null</span><span style="color: #000000">;</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">run</span><span style="color: #24292E">() {</span>
+<span style="color: #24292E">    </span><span style="color: #005CC5">this</span><span style="color: #24292E">.container.client.id </span><span style="color: #D73A49">??=</span><span style="color: #24292E"> </span><span style="color: #005CC5">this</span><span style="color: #24292E">.container.client.user?.id </span><span style="color: #D73A49">??</span><span style="color: #24292E"> </span><span style="color: #005CC5">null</span><span style="color: #24292E">;</span>
+<span style="color: #24292E">  }</span>
+<span style="color: #24292E">}</span>
 </code></pre>
 						</dd>
 						<dt>example</dt>
-						<dd><pre><code class="language-javascript"><span style="color: #008000">// JavaScript:</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">Events</span><span style="color: #000000">, </span><span style="color: #0070C1">Listener</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;@sapphire/framework&#039;</span><span style="color: #000000">);</span>
+						<dd><pre><code class="language-javascript"><span style="color: #6A737D">// JavaScript:</span>
+<span style="color: #D73A49">const</span><span style="color: #24292E"> { </span><span style="color: #005CC5">Events</span><span style="color: #24292E">, </span><span style="color: #005CC5">Listener</span><span style="color: #24292E"> } </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #005CC5">require</span><span style="color: #24292E">(</span><span style="color: #032F62">&#039;@sapphire/framework&#039;</span><span style="color: #24292E">);</span>
 
-<span style="color: #008000">// Define a class extending `Listener`, then export it.</span>
-<span style="color: #267F99">module</span><span style="color: #000000">.</span><span style="color: #267F99">exports</span><span style="color: #000000"> = </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">CoreListener</span><span style="color: #000000"> </span><span style="color: #0000FF">extends</span><span style="color: #000000"> </span><span style="color: #267F99">Listener</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">constructor</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">super</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">, { </span><span style="color: #001080">event:</span><span style="color: #000000"> </span><span style="color: #001080">Events</span><span style="color: #000000">.</span><span style="color: #001080">Ready</span><span style="color: #000000">, </span><span style="color: #001080">once:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
-<span style="color: #000000">  }</span>
+<span style="color: #6A737D">// Define a class extending `Listener`, then export it.</span>
+<span style="color: #005CC5">module</span><span style="color: #24292E">.</span><span style="color: #005CC5">exports</span><span style="color: #24292E"> </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">CoreListener</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Listener</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #24292E">) {</span>
+<span style="color: #24292E">    </span><span style="color: #005CC5">super</span><span style="color: #24292E">(context, { event: Events.Ready, once: </span><span style="color: #005CC5">true</span><span style="color: #24292E"> });</span>
+<span style="color: #24292E">  }</span>
 
-<span style="color: #000000">  </span><span style="color: #795E26">run</span><span style="color: #000000">() {</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">container</span><span style="color: #000000">.</span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000"> ??= </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">container</span><span style="color: #000000">.</span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #001080">user</span><span style="color: #000000">?.</span><span style="color: #001080">id</span><span style="color: #000000"> ?? </span><span style="color: #0000FF">null</span><span style="color: #000000">;</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
+<span style="color: #24292E">  </span><span style="color: #6F42C1">run</span><span style="color: #24292E">() {</span>
+<span style="color: #24292E">    </span><span style="color: #005CC5">this</span><span style="color: #24292E">.container.client.id </span><span style="color: #D73A49">??=</span><span style="color: #24292E"> </span><span style="color: #005CC5">this</span><span style="color: #24292E">.container.client.user?.id </span><span style="color: #D73A49">??</span><span style="color: #24292E"> </span><span style="color: #005CC5">null</span><span style="color: #24292E">;</span>
+<span style="color: #24292E">  }</span>
+<span style="color: #24292E">}</span>
 </code></pre>
 						</dd>
 					</dl>
@@ -118,7 +120,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Piece</span>
+						<a href="Piece.html" class="tsd-signature-type" data-tsd-kind="Class">Piece</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Listener</span>
@@ -142,8 +144,18 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="Listener.html#_listener" class="tsd-kind-icon">_listener</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Listener.html#emitter" class="tsd-kind-icon">emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#enabled" class="tsd-kind-icon">enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Listener.html#event" class="tsd-kind-icon">event</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Listener.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#store" class="tsd-kind-icon">store</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#container" class="tsd-kind-icon">container</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -153,8 +165,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="Listener.html#_runOnce" class="tsd-kind-icon">_run<wbr>Once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Listener.html#onLoad" class="tsd-kind-icon">on<wbr>Load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Listener.html#onUnload" class="tsd-kind-icon">on<wbr>Unload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#reload" class="tsd-kind-icon">reload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Listener.html#run" class="tsd-kind-icon">run</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Listener.html#toJSON" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="Listener.html#unload" class="tsd-kind-icon">unload</a></li>
 							</ul>
 						</section>
 					</div>
@@ -166,14 +180,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Listener&lt;E&gt;<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PieceContext</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/ListenerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ListenerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Listener.html" class="tsd-signature-type" data-tsd-kind="Class">Listener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Listener&lt;E&gt;<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/PieceContext.html" class="tsd-signature-type" data-tsd-kind="Interface">PieceContext</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/ListenerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ListenerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Listener.html" class="tsd-signature-type" data-tsd-kind="Class">Listener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides Piece.constructor</p>
+								<p>Overrides <a href="Piece.html">Piece</a>.<a href="Piece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L65">src/lib/structures/Listener.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L65">src/lib/structures/Listener.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -185,7 +199,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <span class="tsd-signature-type">PieceContext</span></h5>
+									<h5>context: <a href="../interfaces/PieceContext.html" class="tsd-signature-type" data-tsd-kind="Interface">PieceContext</a></h5>
 								</li>
 								<li>
 									<h5>options: <a href="../interfaces/ListenerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ListenerOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
@@ -204,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">_listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L63">src/lib/structures/Listener.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L63">src/lib/structures/Listener.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EventEmitter</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L50">src/lib/structures/Listener.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L50">src/lib/structures/Listener.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -228,13 +242,29 @@
 						</dl>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="enabled" class="tsd-anchor"></a>
+					<h3>enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Piece.html">Piece</a>.<a href="Piece.html#enabled">enabled</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:327</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether or not the piece is enabled.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="event" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> event</h3>
 					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L56">src/lib/structures/Listener.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L56">src/lib/structures/Listener.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -248,13 +278,29 @@
 						</dl>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Piece.html">Piece</a>.<a href="Piece.html#name">name</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:323</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the piece.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="once" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> once</h3>
 					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L62">src/lib/structures/Listener.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L62">src/lib/structures/Listener.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -267,6 +313,68 @@
 							</dd>
 						</dl>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Piece.html">Piece</a>.<a href="Piece.html#path">path</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:319</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path to the piece’s file.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="store" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> store</h3>
+					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <a href="Store.html" class="tsd-signature-type" data-tsd-kind="Class">Store</a><span class="tsd-signature-symbol">&lt;</span><a href="Piece.html" class="tsd-signature-type" data-tsd-kind="Class">Piece</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Piece.html">Piece</a>.<a href="Piece.html#store">store</a></p>
+						<ul>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:315</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The store that contains the piece.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="container" class="tsd-anchor"></a>
+					<h3>container</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> container<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:333</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A reference to the {@link Container} object for ease of use.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>container</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Container</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -281,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L120">src/lib/structures/Listener.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L120">src/lib/structures/Listener.ts:120</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -304,7 +412,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L128">src/lib/structures/Listener.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L128">src/lib/structures/Listener.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -326,11 +434,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides Piece.onLoad</p>
+								<p>Overrides <a href="Piece.html">Piece</a>.<a href="Piece.html#onLoad">onLoad</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L84">src/lib/structures/Listener.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L84">src/lib/structures/Listener.ts:84</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Per-piece listener that is called when the piece is loaded into the store.
+									Useful to set-up asynchronous initialization tasks.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 						</li>
 					</ul>
@@ -344,12 +458,41 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides Piece.onUnload</p>
+								<p>Overrides <a href="Piece.html">Piece</a>.<a href="Piece.html#onUnload">onUnload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L97">src/lib/structures/Listener.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L97">src/lib/structures/Listener.ts:97</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Per-piece listener that is called when the piece is unloaded from the store.
+									Useful to set-up clean-up tasks.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="reload" class="tsd-anchor"></a>
+					<h3>reload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Piece.html">Piece</a>.<a href="Piece.html#reload">reload</a></p>
+								<ul>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:351</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reloads the piece by loading the same path in the store.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -363,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L82">src/lib/structures/Listener.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L82">src/lib/structures/Listener.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -385,12 +528,40 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides Piece.toJSON</p>
+								<p>Overrides <a href="Piece.html">Piece</a>.<a href="Piece.html#toJSON">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/91ff970/src/lib/structures/Listener.ts#L112">src/lib/structures/Listener.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9790c48/src/lib/structures/Listener.ts#L112">src/lib/structures/Listener.ts:112</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Defines the <code>JSON.stringify</code> behavior of this piece.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="unload" class="tsd-anchor"></a>
+					<h3>unload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">unload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Piece.html">Piece</a>.<a href="Piece.html#unload">unload</a></p>
+								<ul>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:347</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Unloads and disables the piece.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -420,11 +591,26 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Listener.html#emitter" class="tsd-kind-icon">emitter</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#enabled" class="tsd-kind-icon">enabled</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Listener.html#event" class="tsd-kind-icon">event</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#name" class="tsd-kind-icon">name</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Listener.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#store" class="tsd-kind-icon">store</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#container" class="tsd-kind-icon">container</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="Listener.html#_run" class="tsd-kind-icon">_run</a>
@@ -438,11 +624,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="Listener.html#onUnload" class="tsd-kind-icon">on<wbr>Unload</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#reload" class="tsd-kind-icon">reload</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Listener.html#run" class="tsd-kind-icon">run</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="Listener.html#toJSON" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="Listener.html#unload" class="tsd-kind-icon">unload</a>
 							</li>
 						</ul>
 					</li>
@@ -453,7 +645,7 @@
 		</div>
 	</div>
 </div>
-<footer class="with-border-bottom">
+<footer>
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
@@ -485,9 +677,6 @@
 		</div>
 	</div>
 </footer>
-<div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 </body>
