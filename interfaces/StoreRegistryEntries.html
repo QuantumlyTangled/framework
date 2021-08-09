@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UnknownCommandNamePayload | @sapphire/framework</title>
+	<title>StoreRegistryEntries | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,26 +55,33 @@
 					<a href="../modules.html">@sapphire/framework</a>
 				</li>
 				<li>
-					<a href="UnknownCommandNamePayload.html">UnknownCommandNamePayload</a>
+					<a href="StoreRegistryEntries.html">StoreRegistryEntries</a>
 				</li>
 			</ul>
-			<h1>Interface UnknownCommandNamePayload</h1>
+			<h1>Interface StoreRegistryEntries</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The <a href="../classes/StoreRegistry.html">StoreRegistry</a>‘s registry, use module augmentation against this interface when adding new stores.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>since</dt>
+						<dd><p>2.1.0</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UnknownCommandNamePayload</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="UnknownCommandPayload.html" class="tsd-signature-type" data-tsd-kind="Interface">UnknownCommandPayload</a>
-							</li>
-						</ul>
+						<span class="target">StoreRegistryEntries</span>
 					</li>
 				</ul>
 			</section>
@@ -82,46 +89,57 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="UnknownCommandNamePayload.html#commandPrefix" class="tsd-kind-icon">command<wbr>Prefix</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="UnknownCommandNamePayload.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="UnknownCommandNamePayload.html#prefix" class="tsd-kind-icon">prefix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="StoreRegistryEntries.html#arguments" class="tsd-kind-icon">arguments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="StoreRegistryEntries.html#commands" class="tsd-kind-icon">commands</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="StoreRegistryEntries.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="StoreRegistryEntries.html#preconditions" class="tsd-kind-icon">preconditions</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="commandPrefix" class="tsd-anchor"></a>
-					<h3>command<wbr>Prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">command<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="arguments" class="tsd-anchor"></a>
+					<h3>arguments</h3>
+					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <a href="../classes/ArgumentStore.html" class="tsd-signature-type" data-tsd-kind="Class">ArgumentStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/types/Events.ts#L93">src/lib/types/Events.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/SapphireClient.ts#L311">src/lib/SapphireClient.ts:311</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="commands" class="tsd-anchor"></a>
+					<h3>commands</h3>
+					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <a href="../classes/CommandStore.html" class="tsd-signature-type" data-tsd-kind="Class">CommandStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/types/Events.ts#L91">src/lib/types/Events.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/SapphireClient.ts#L312">src/lib/SapphireClient.ts:312</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3>prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="listeners" class="tsd-anchor"></a>
+					<h3>listeners</h3>
+					<div class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">:</span> <a href="../classes/ListenerStore.html" class="tsd-signature-type" data-tsd-kind="Class">ListenerStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/types/Events.ts#L92">src/lib/types/Events.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/SapphireClient.ts#L313">src/lib/SapphireClient.ts:313</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="preconditions" class="tsd-anchor"></a>
+					<h3>preconditions</h3>
+					<div class="tsd-signature tsd-kind-icon">preconditions<span class="tsd-signature-symbol">:</span> <a href="../classes/PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/aa78ba9/src/lib/SapphireClient.ts#L314">src/lib/SapphireClient.ts:314</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,17 +157,20 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="UnknownCommandNamePayload.html" class="tsd-kind-icon">Unknown<wbr>Command<wbr>Name<wbr>Payload</a>
+					<li class="current tsd-kind-interface tsd-is-external">
+						<a href="StoreRegistryEntries.html" class="tsd-kind-icon">Store<wbr>Registry<wbr>Entries</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="UnknownCommandNamePayload.html#commandPrefix" class="tsd-kind-icon">command<wbr>Prefix</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="StoreRegistryEntries.html#arguments" class="tsd-kind-icon">arguments</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="UnknownCommandNamePayload.html#message" class="tsd-kind-icon">message</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="StoreRegistryEntries.html#commands" class="tsd-kind-icon">commands</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="UnknownCommandNamePayload.html#prefix" class="tsd-kind-icon">prefix</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="StoreRegistryEntries.html#listeners" class="tsd-kind-icon">listeners</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="StoreRegistryEntries.html#preconditions" class="tsd-kind-icon">preconditions</a>
 							</li>
 						</ul>
 					</li>
