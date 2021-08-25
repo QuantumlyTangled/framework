@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PluginHook | @sapphire/framework</title>
+	<title>CommandOptionsRunTypeEnum | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,16 +55,28 @@
 					<a href="../modules.html">@sapphire/framework</a>
 				</li>
 				<li>
-					<a href="PluginHook.html">PluginHook</a>
+					<a href="CommandOptionsRunTypeEnum.html">CommandOptionsRunTypeEnum</a>
 				</li>
 			</ul>
-			<h1>Enumeration PluginHook</h1>
+			<h1>Enumeration CommandOptionsRunTypeEnum</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The allowed values for <a href="../interfaces/CommandOptions.html#runIn">CommandOptions.runIn</a> as an enum.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>since</dt>
+						<dd><p>2.0.0</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -72,11 +84,13 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="PluginHook.html#PostInitialization" class="tsd-kind-icon">Post<wbr>Initialization</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="PluginHook.html#PostLogin" class="tsd-kind-icon">Post<wbr>Login</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="PluginHook.html#PreGenericsInitialization" class="tsd-kind-icon">Pre<wbr>Generics<wbr>Initialization</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="PluginHook.html#PreInitialization" class="tsd-kind-icon">Pre<wbr>Initialization</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="PluginHook.html#PreLogin" class="tsd-kind-icon">Pre<wbr>Login</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#Dm" class="tsd-kind-icon">Dm</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#GuildAny" class="tsd-kind-icon">Guild<wbr>Any</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#GuildNews" class="tsd-kind-icon">Guild<wbr>News</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#GuildNewsThread" class="tsd-kind-icon">Guild<wbr>News<wbr>Thread</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#GuildPrivateThread" class="tsd-kind-icon">Guild<wbr>Private<wbr>Thread</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#GuildPublicThread" class="tsd-kind-icon">Guild<wbr>Public<wbr>Thread</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="CommandOptionsRunTypeEnum.html#GuildText" class="tsd-kind-icon">Guild<wbr>Text</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,52 +99,72 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="PostInitialization" class="tsd-anchor"></a>
-					<h3>Post<wbr>Initialization</h3>
-					<div class="tsd-signature tsd-kind-icon">Post<wbr>Initialization<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;postInitialization&quot;</span></div>
+					<a name="Dm" class="tsd-anchor"></a>
+					<h3>Dm</h3>
+					<div class="tsd-signature tsd-kind-icon">Dm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;DM&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/types/Enums.ts#L10">src/lib/types/Enums.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L342">src/lib/structures/Command.ts:342</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="PostLogin" class="tsd-anchor"></a>
-					<h3>Post<wbr>Login</h3>
-					<div class="tsd-signature tsd-kind-icon">Post<wbr>Login<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;postLogin&quot;</span></div>
+					<a name="GuildAny" class="tsd-anchor"></a>
+					<h3>Guild<wbr>Any</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Any<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_ANY&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/types/Enums.ts#L12">src/lib/types/Enums.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L348">src/lib/structures/Command.ts:348</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="PreGenericsInitialization" class="tsd-anchor"></a>
-					<h3>Pre<wbr>Generics<wbr>Initialization</h3>
-					<div class="tsd-signature tsd-kind-icon">Pre<wbr>Generics<wbr>Initialization<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;preGenericsInitialization&quot;</span></div>
+					<a name="GuildNews" class="tsd-anchor"></a>
+					<h3>Guild<wbr>News</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>News<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_NEWS&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/types/Enums.ts#L8">src/lib/types/Enums.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L344">src/lib/structures/Command.ts:344</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="PreInitialization" class="tsd-anchor"></a>
-					<h3>Pre<wbr>Initialization</h3>
-					<div class="tsd-signature tsd-kind-icon">Pre<wbr>Initialization<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;preInitialization&quot;</span></div>
+					<a name="GuildNewsThread" class="tsd-anchor"></a>
+					<h3>Guild<wbr>News<wbr>Thread</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>News<wbr>Thread<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_NEWS_THREAD&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/types/Enums.ts#L9">src/lib/types/Enums.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L345">src/lib/structures/Command.ts:345</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="PreLogin" class="tsd-anchor"></a>
-					<h3>Pre<wbr>Login</h3>
-					<div class="tsd-signature tsd-kind-icon">Pre<wbr>Login<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;preLogin&quot;</span></div>
+					<a name="GuildPrivateThread" class="tsd-anchor"></a>
+					<h3>Guild<wbr>Private<wbr>Thread</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Private<wbr>Thread<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_PRIVATE_THREAD&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/types/Enums.ts#L11">src/lib/types/Enums.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L347">src/lib/structures/Command.ts:347</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="GuildPublicThread" class="tsd-anchor"></a>
+					<h3>Guild<wbr>Public<wbr>Thread</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Public<wbr>Thread<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_PUBLIC_THREAD&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L346">src/lib/structures/Command.ts:346</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="GuildText" class="tsd-anchor"></a>
+					<h3>Guild<wbr>Text</h3>
+					<div class="tsd-signature tsd-kind-icon">Guild<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;GUILD_TEXT&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/Command.ts#L343">src/lib/structures/Command.ts:343</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -149,22 +183,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="PluginHook.html" class="tsd-kind-icon">Plugin<wbr>Hook</a>
+						<a href="CommandOptionsRunTypeEnum.html" class="tsd-kind-icon">Command<wbr>Options<wbr>Run<wbr>Type<wbr>Enum</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="PluginHook.html#PostInitialization" class="tsd-kind-icon">Post<wbr>Initialization</a>
+								<a href="CommandOptionsRunTypeEnum.html#Dm" class="tsd-kind-icon">Dm</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="PluginHook.html#PostLogin" class="tsd-kind-icon">Post<wbr>Login</a>
+								<a href="CommandOptionsRunTypeEnum.html#GuildAny" class="tsd-kind-icon">Guild<wbr>Any</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="PluginHook.html#PreGenericsInitialization" class="tsd-kind-icon">Pre<wbr>Generics<wbr>Initialization</a>
+								<a href="CommandOptionsRunTypeEnum.html#GuildNews" class="tsd-kind-icon">Guild<wbr>News</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="PluginHook.html#PreInitialization" class="tsd-kind-icon">Pre<wbr>Initialization</a>
+								<a href="CommandOptionsRunTypeEnum.html#GuildNewsThread" class="tsd-kind-icon">Guild<wbr>News<wbr>Thread</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="PluginHook.html#PreLogin" class="tsd-kind-icon">Pre<wbr>Login</a>
+								<a href="CommandOptionsRunTypeEnum.html#GuildPrivateThread" class="tsd-kind-icon">Guild<wbr>Private<wbr>Thread</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="CommandOptionsRunTypeEnum.html#GuildPublicThread" class="tsd-kind-icon">Guild<wbr>Public<wbr>Thread</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="CommandOptionsRunTypeEnum.html#GuildText" class="tsd-kind-icon">Guild<wbr>Text</a>
 							</li>
 						</ul>
 					</li>
