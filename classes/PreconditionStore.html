@@ -115,7 +115,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#_iterator_" class="tsd-kind-icon">[iterator]</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#array" class="tsd-kind-icon">array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="PreconditionStore.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#concat" class="tsd-kind-icon">concat</a></li>
@@ -135,9 +134,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#forEach" class="tsd-kind-icon">for<wbr>Each</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#hasAll" class="tsd-kind-icon">has<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#hasAny" class="tsd-kind-icon">has<wbr>Any</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#intersect" class="tsd-kind-icon">intersect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#keyArray" class="tsd-kind-icon">key<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#keys" class="tsd-kind-icon">keys</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#last" class="tsd-kind-icon">last</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#lastKey" class="tsd-kind-icon">last<wbr>Key</a></li>
@@ -158,7 +158,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#sorted" class="tsd-kind-icon">sorted</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#sweep" class="tsd-kind-icon">sweep</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#tap" class="tsd-kind-icon">tap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#toJSON" class="tsd-kind-icon">toJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#unload" class="tsd-kind-icon">unload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#unloadAll" class="tsd-kind-icon">unload<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="PreconditionStore.html#values" class="tsd-kind-icon">values</a></li>
 							</ul>
 						</section>
@@ -178,7 +180,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="Store.html">Store</a>.<a href="Store.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/PreconditionStore.ts#L10">src/lib/structures/PreconditionStore.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/PreconditionStore.ts#L10">src/lib/structures/PreconditionStore.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
@@ -195,7 +197,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#Constructor">Constructor</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:192</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:197</li>
 						</ul>
 					</aside>
 				</section>
@@ -213,11 +215,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="constructor-1" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<div class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Collection</span></div>
+					<div class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CollectionConstructor</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from Store.constructor</p>
 						<ul>
-							<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:18</li>
+							<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Preconditions<span class="tsd-signature-symbol">:</span> <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/PreconditionStore.ts#L8">src/lib/structures/PreconditionStore.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/PreconditionStore.ts#L8">src/lib/structures/PreconditionStore.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#name">name</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:193</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:198</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +251,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#paths">paths</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:194</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:199</li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +273,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#strategy">strategy</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:195</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:200</li>
 						</ul>
 					</aside>
 				</section>
@@ -293,7 +295,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#default">default</a></p>
 						<ul>
-							<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:17</li>
+							<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -304,7 +306,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#defaultStrategy">defaultStrategy</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:268</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:277</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -321,7 +323,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:272</li>
+							<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:281</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -343,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:205</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:210</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -386,32 +388,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="array" class="tsd-anchor"></a>
-					<h3>array</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#array">array</a></p>
-								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:62</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates an ordered array of the values of this collection, and caches it internally. The array will only be
-										reconstructed if an item is added to or removed from the collection, or if you change the length of the array
-										itself. If you don’t want this caching behavior, use <code>[...collection.values()]</code> or
-									<code>Array.from(collection.values())</code> instead.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="clear" class="tsd-anchor"></a>
 					<h3>clear</h3>
@@ -423,7 +399,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="Store.html">Store</a>.<a href="Store.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/PreconditionStore.ts#L44">src/lib/structures/PreconditionStore.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/PreconditionStore.ts#L44">src/lib/structures/PreconditionStore.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,14 +416,14 @@
 					<a name="clone" class="tsd-anchor"></a>
 					<h3>clone</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:267</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:272</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,7 +436,7 @@
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -468,14 +444,14 @@
 					<a name="concat" class="tsd-anchor"></a>
 					<h3>concat</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">concat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>collections<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
+						<li class="tsd-signature tsd-kind-icon">concat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>collections<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#concat">concat</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:274</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:279</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -497,7 +473,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -512,7 +488,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:251</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:260</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +527,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="Store.html">Store</a>.<a href="Store.html#delete">delete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/PreconditionStore.ts#L35">src/lib/structures/PreconditionStore.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/PreconditionStore.ts#L35">src/lib/structures/PreconditionStore.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -582,7 +558,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#difference">difference</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:305</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:310</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +591,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#each">each</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:247</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:252</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -672,7 +648,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#each">each</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:248</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:253</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -752,7 +728,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#equals">equals</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:282</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:287</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -780,15 +756,19 @@
 					<a name="every" class="tsd-anchor"></a>
 					<h3>every</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">every&lt;K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">every&lt;V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">every<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon">every&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">every&lt;This, K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">every&lt;This, V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">every&lt;This&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#every">every</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:222</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:223</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -802,13 +782,103 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Function used to test (should return a boolean)</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#every">every</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:224</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#every">every</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:225</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Function used to test (should return a boolean)</p>
-									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
@@ -841,13 +911,115 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#every">every</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:223</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:226</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T</h4>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#every">every</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:227</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#every">every</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:228</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -880,7 +1052,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>thisArg: <span class="tsd-signature-type">T</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -891,15 +1063,19 @@
 					<a name="filter" class="tsd-anchor"></a>
 					<h3>filter</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
-						<li class="tsd-signature tsd-kind-icon">filter&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
+						<li class="tsd-signature tsd-kind-icon">filter&lt;K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter&lt;V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter&lt;This, K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter&lt;This, V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter&lt;This&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#filter">filter</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:162</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:155</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -914,16 +1090,106 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The function to test with (should return boolean)</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#filter">filter</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:156</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#filter">filter</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:157</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -947,19 +1213,121 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#filter">filter</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:163</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:158</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T</h4>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#filter">filter</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:159</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#filter">filter</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:160</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -992,10 +1360,10 @@
 									</ul>
 								</li>
 								<li>
-									<h5>thisArg: <span class="tsd-signature-type">T</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1003,15 +1371,17 @@
 					<a name="find" class="tsd-anchor"></a>
 					<h3>find</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">find&lt;V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">V2</span></li>
 						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></li>
-						<li class="tsd-signature tsd-kind-icon">find&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></li>
+						<li class="tsd-signature tsd-kind-icon">find&lt;This, V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">V2</span></li>
+						<li class="tsd-signature tsd-kind-icon">find&lt;This&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#find">find</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:132</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:121</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1028,13 +1398,58 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function to test with (should return boolean)</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">V2</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#find">find</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:122</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The function to test with (should return boolean)</p>
-									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
@@ -1067,13 +1482,64 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#find">find</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:133</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:123</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T</h4>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">V2</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#find">find</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:124</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1106,7 +1572,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>thisArg: <span class="tsd-signature-type">T</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h4>
@@ -1117,15 +1583,17 @@
 					<a name="findKey" class="tsd-anchor"></a>
 					<h3>find<wbr>Key</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Key&lt;K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">K2</span></li>
 						<li class="tsd-signature tsd-kind-icon">find<wbr>Key<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Key&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Key&lt;This, K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">K2</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Key&lt;This&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#findKey">findKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:143</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:134</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1140,13 +1608,58 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function to test with (should return boolean)</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">K2</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#findKey">findKey</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:135</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The function to test with (should return boolean)</p>
-									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
@@ -1179,13 +1692,64 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#findKey">findKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:144</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:136</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T</h4>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">K2</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#findKey">findKey</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:137</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1218,7 +1782,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>thisArg: <span class="tsd-signature-type">T</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
@@ -1237,7 +1801,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#first">first</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:77</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:70</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1253,7 +1817,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#first">first</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:78</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:71</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1278,7 +1842,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#firstKey">firstKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:85</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:78</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1294,7 +1858,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#firstKey">firstKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:86</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:79</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1319,7 +1883,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#flatMap">flatMap</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:182</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:183</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1378,7 +1942,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#flatMap">flatMap</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:183</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:184</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1489,7 +2053,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#get">get</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:26</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:23</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1522,7 +2086,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#has">has</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:41</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:38</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1546,6 +2110,72 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="hasAll" class="tsd-anchor"></a>
+					<h3>has<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#hasAll">hasAll</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if all of the elements exist in the collection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>keys: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The keys of the elements to check for</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if all of the elements exist, <code>false</code> if at least one does not exist.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="hasAny" class="tsd-anchor"></a>
+					<h3>has<wbr>Any</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Any<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#hasAny">hasAny</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:63</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if any of the elements exist in the collection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>keys: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The keys of the elements to check for</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if any of the elements exist, <code>false</code> if none exist.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="insert" class="tsd-anchor"></a>
 					<h3>insert</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -1556,7 +2186,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:244</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:253</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1589,7 +2219,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#intersect">intersect</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:299</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:304</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1607,32 +2237,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="keyArray" class="tsd-anchor"></a>
-					<h3>key<wbr>Array</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#keyArray">keyArray</a></p>
-								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:70</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates an ordered array of the keys of this collection, and caches it internally. The array will only be
-										reconstructed if an item is added to or removed from the collection, or if you change the length of the array
-										itself. If you don’t want this caching behavior, use <code>[...collection.keys()]</code> or
-									<code>Array.from(collection.keys())</code> instead.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1671,13 +2275,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#last">last</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:94</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:86</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Obtains the last value(s) in this collection. This relies on {@link Collection#array}, and thus the caching
-									mechanism applies here as well.</p>
+									<p>Obtains the last value(s) in this collection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h4>
@@ -1688,7 +2291,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#last">last</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:95</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:87</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1713,13 +2316,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#lastKey">lastKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:103</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:94</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Obtains the last key(s) in this collection. This relies on {@link Collection#keyArray}, and thus the caching
-									mechanism applies here as well.</p>
+									<p>Obtains the last key(s) in this collection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
@@ -1730,7 +2332,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#lastKey">lastKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:104</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:95</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1754,7 +2356,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#load">load</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:222</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:227</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1772,7 +2374,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An async iterator that yields each one of the loaded pieces.</p>
+							<p>All the loaded pieces.</p>
 						</li>
 					</ul>
 				</section>
@@ -1787,7 +2389,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#loadAll">loadAll</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:232</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:241</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1811,7 +2413,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#map">map</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:192</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:193</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1870,7 +2472,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#map">map</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:193</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:194</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1931,7 +2533,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#mapValues">mapValues</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:202</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:203</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1990,7 +2592,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#mapValues">mapValues</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:203</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:204</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2043,15 +2645,19 @@
 					<a name="partition" class="tsd-anchor"></a>
 					<h3>partition</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">partition<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">, </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">]</span></li>
-						<li class="tsd-signature tsd-kind-icon">partition&lt;T&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">, </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">partition&lt;K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">partition&lt;V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">partition<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">partition&lt;This, K2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">partition&lt;This, V2&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">partition&lt;This&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#partition">partition</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:172</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:169</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2065,13 +2671,103 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Function used to test (should return a boolean)</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#partition">partition</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:170</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#partition">partition</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:171</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Function used to test (should return a boolean)</p>
-									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
@@ -2098,7 +2794,58 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">, </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#partition">partition</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:172</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>K2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">K2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
@@ -2110,7 +2857,58 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T</h4>
+									<h4>This</h4>
+								</li>
+								<li>
+									<h4>V2<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
+														</li>
+														<li>
+															<h5>key: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>collection: <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">V2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#partition">partition</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:174</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>This</h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2143,10 +2941,10 @@
 									</ul>
 								</li>
 								<li>
-									<h5>thisArg: <span class="tsd-signature-type">T</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">This</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">, </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a><span class="tsd-signature-symbol">]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2162,13 +2960,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#random">random</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:111</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:101</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Obtains unique random value(s) from this collection. This relies on {@link Collection#array}, and thus the caching
-									mechanism applies here as well.</p>
+									<p>Obtains unique random value(s) from this collection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h4>
@@ -2178,7 +2975,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#random">random</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:112</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:102</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2203,13 +3000,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#randomKey">randomKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:119</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:108</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Obtains unique random key(s) from this collection. This relies on {@link Collection#keyArray}, and thus the caching
-									mechanism applies here as well.</p>
+									<p>Obtains unique random key(s) from this collection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -2219,7 +3015,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#randomKey">randomKey</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:120</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:109</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2243,7 +3039,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#reduce">reduce</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:233</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:238</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2318,7 +3114,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#registerPath">registerPath</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:216</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:221</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2358,7 +3154,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:238</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:247</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2390,7 +3186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/PreconditionStore.ts#L14">src/lib/structures/PreconditionStore.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/PreconditionStore.ts#L14">src/lib/structures/PreconditionStore.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2420,7 +3216,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="Store.html">Store</a>.<a href="Store.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/2d21b03/src/lib/structures/PreconditionStore.ts#L23">src/lib/structures/PreconditionStore.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/PreconditionStore.ts#L23">src/lib/structures/PreconditionStore.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2454,7 +3250,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#some">some</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:212</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:213</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2507,7 +3303,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#some">some</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:213</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:214</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2557,14 +3353,14 @@
 					<a name="sort" class="tsd-anchor"></a>
 					<h3>sort</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">sort<span class="tsd-signature-symbol">(</span>compareFunction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>firstValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, secondValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, firstKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secondKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
+						<li class="tsd-signature tsd-kind-icon">sort<span class="tsd-signature-symbol">(</span>compareFunction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Comparator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#sort">sort</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:293</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:298</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2582,34 +3378,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> compareFunction: <span class="tsd-signature-symbol">(</span>firstValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, secondValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, firstKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secondKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>firstValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, secondValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, firstKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secondKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>firstValue: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
-														</li>
-														<li>
-															<h5>secondValue: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
-														</li>
-														<li>
-															<h5>firstKey: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>secondKey: <span class="tsd-signature-type">string</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> compareFunction: <span class="tsd-signature-type">Comparator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
@@ -2620,14 +3389,14 @@
 					<a name="sorted" class="tsd-anchor"></a>
 					<h3>sorted</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">sorted<span class="tsd-signature-symbol">(</span>compareFunction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>firstValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, secondValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, firstKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secondKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></li>
+						<li class="tsd-signature tsd-kind-icon">sorted<span class="tsd-signature-symbol">(</span>compareFunction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Comparator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#sorted">sorted</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:316</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:321</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2645,37 +3414,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> compareFunction: <span class="tsd-signature-symbol">(</span>firstValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, secondValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, firstKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secondKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>firstValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, secondValue<span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a>, firstKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secondKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>firstValue: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
-														</li>
-														<li>
-															<h5>secondValue: <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a></h5>
-														</li>
-														<li>
-															<h5>firstKey: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>secondKey: <span class="tsd-signature-type">string</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> compareFunction: <span class="tsd-signature-type">Comparator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="PreconditionStore.html" class="tsd-signature-type" data-tsd-kind="Class">PreconditionStore</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2691,7 +3433,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#sweep">sweep</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:151</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:144</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2739,7 +3481,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#sweep">sweep</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:152</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:145</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2797,7 +3539,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#tap">tap</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:260</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:265</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2846,7 +3588,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#tap">tap</a></p>
 								<ul>
-									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:261</li>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:266</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2887,6 +3629,24 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="toJSON" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#toJSON">toJSON</a></p>
+								<ul>
+									<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:322</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="unload" class="tsd-anchor"></a>
 					<h3>unload</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -2897,7 +3657,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#unload">unload</a></p>
 								<ul>
-									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:228</li>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:233</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2916,6 +3676,29 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Returns the piece that was unloaded.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="unloadAll" class="tsd-anchor"></a>
+					<h3>unload<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">unload<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Store.html">Store</a>.<a href="Store.html#unloadAll">unloadAll</a></p>
+								<ul>
+									<li>Defined in node_modules/@sapphire/pieces/dist/index.d.ts:237</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Unloads all pieces from the store.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Precondition.html" class="tsd-signature-type" data-tsd-kind="Class">Precondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3004,9 +3787,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="PreconditionStore.html#_iterator_" class="tsd-kind-icon">[iterator]</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="PreconditionStore.html#array" class="tsd-kind-icon">array</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="PreconditionStore.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
@@ -3065,13 +3845,16 @@
 								<a href="PreconditionStore.html#has" class="tsd-kind-icon">has</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="PreconditionStore.html#hasAll" class="tsd-kind-icon">has<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="PreconditionStore.html#hasAny" class="tsd-kind-icon">has<wbr>Any</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="PreconditionStore.html#insert" class="tsd-kind-icon">insert</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="PreconditionStore.html#intersect" class="tsd-kind-icon">intersect</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="PreconditionStore.html#keyArray" class="tsd-kind-icon">key<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="PreconditionStore.html#keys" class="tsd-kind-icon">keys</a>
@@ -3134,7 +3917,13 @@
 								<a href="PreconditionStore.html#tap" class="tsd-kind-icon">tap</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="PreconditionStore.html#toJSON" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="PreconditionStore.html#unload" class="tsd-kind-icon">unload</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="PreconditionStore.html#unloadAll" class="tsd-kind-icon">unload<wbr>All</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="PreconditionStore.html#values" class="tsd-kind-icon">values</a>
