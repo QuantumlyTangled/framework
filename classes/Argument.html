@@ -79,12 +79,12 @@
 
 <span style="color: #6A737D">// Define a class extending `Argument`, then export it.</span>
 <span style="color: #6A737D">// NOTE: You can use `export default` or `export =` too.</span>
-<span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">CoreArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Argument</span><span style="color: #24292E">&lt;</span><span style="color: #6F42C1">URL</span><span style="color: #24292E">&gt; {</span>
-<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">PieceContext</span><span style="color: #24292E">) {</span>
+<span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #E36209">CoreArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #005CC5">Argument</span><span style="color: #24292E">&lt;</span><span style="color: #E36209">URL</span><span style="color: #24292E">&gt; {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">PieceContext</span><span style="color: #24292E">) {</span>
 <span style="color: #24292E">    </span><span style="color: #005CC5">super</span><span style="color: #24292E">(context, { name: </span><span style="color: #032F62">&#039;hyperlink&#039;</span><span style="color: #24292E">, aliases: [</span><span style="color: #032F62">&#039;url&#039;</span><span style="color: #24292E">] });</span>
 <span style="color: #24292E">  }</span>
 
-<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">run</span><span style="color: #24292E">(</span><span style="color: #E36209">argument</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #005CC5">string</span><span style="color: #24292E">)</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">ArgumentResult</span><span style="color: #24292E">&lt;</span><span style="color: #6F42C1">URL</span><span style="color: #24292E">&gt; {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">run</span><span style="color: #24292E">(</span><span style="color: #E36209">argument</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #005CC5">string</span><span style="color: #24292E">)</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">ArgumentResult</span><span style="color: #24292E">&lt;</span><span style="color: #E36209">URL</span><span style="color: #24292E">&gt; {</span>
 <span style="color: #24292E">    </span><span style="color: #D73A49">try</span><span style="color: #24292E"> {</span>
 <span style="color: #24292E">      </span><span style="color: #D73A49">return</span><span style="color: #24292E"> </span><span style="color: #005CC5">this</span><span style="color: #24292E">.</span><span style="color: #6F42C1">ok</span><span style="color: #24292E">(</span><span style="color: #D73A49">new</span><span style="color: #24292E"> </span><span style="color: #6F42C1">URL</span><span style="color: #24292E">(argument));</span>
 <span style="color: #24292E">    } </span><span style="color: #D73A49">catch</span><span style="color: #24292E"> {</span>
@@ -96,8 +96,8 @@
 <span style="color: #6A737D">// Augment the ArgType structure so `args.pick(&#039;url&#039;)`, `args.repeat(&#039;url&#039;)`</span>
 <span style="color: #6A737D">// and others have a return type of `URL`.</span>
 <span style="color: #D73A49">declare</span><span style="color: #24292E"> </span><span style="color: #D73A49">module</span><span style="color: #24292E"> </span><span style="color: #032F62">&#039;@sapphire/framework/dist/lib/utils/Args&#039;</span><span style="color: #24292E"> {</span>
-<span style="color: #24292E">  </span><span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">interface</span><span style="color: #24292E"> </span><span style="color: #6F42C1">ArgType</span><span style="color: #24292E"> {</span>
-<span style="color: #24292E">    </span><span style="color: #E36209">url</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">URL</span><span style="color: #24292E">;</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">interface</span><span style="color: #24292E"> </span><span style="color: #E36209">ArgType</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">    </span><span style="color: #E36209">url</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">URL</span><span style="color: #24292E">;</span>
 <span style="color: #24292E">  }</span>
 <span style="color: #24292E">}</span>
 </code></pre>
@@ -107,7 +107,7 @@
 <span style="color: #D73A49">const</span><span style="color: #24292E"> { </span><span style="color: #005CC5">Argument</span><span style="color: #24292E"> } </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #005CC5">require</span><span style="color: #24292E">(</span><span style="color: #032F62">&#039;@sapphire/framework&#039;</span><span style="color: #24292E">);</span>
 
 <span style="color: #6A737D">// Define a class extending `Argument`, then export it.</span>
-<span style="color: #005CC5">module</span><span style="color: #24292E">.</span><span style="color: #005CC5">exports</span><span style="color: #24292E"> </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">CoreArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Argument</span><span style="color: #24292E"> {</span>
+<span style="color: #005CC5">module</span><span style="color: #24292E">.</span><span style="color: #005CC5">exports</span><span style="color: #24292E"> </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #E36209">CoreArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #005CC5">Argument</span><span style="color: #24292E"> {</span>
 <span style="color: #24292E">  </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #24292E">) {</span>
 <span style="color: #24292E">    </span><span style="color: #005CC5">super</span><span style="color: #24292E">(context, { name: </span><span style="color: #032F62">&#039;hyperlink&#039;</span><span style="color: #24292E">, aliases: [</span><span style="color: #032F62">&#039;url&#039;</span><span style="color: #24292E">] });</span>
 <span style="color: #24292E">  }</span>
@@ -361,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/Argument.ts#L107">src/lib/structures/Argument.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/Argument.ts#L107">src/lib/structures/Argument.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/Argument.ts#L97">src/lib/structures/Argument.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/Argument.ts#L97">src/lib/structures/Argument.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -492,7 +492,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/IArgument.html">IArgument</a>.<a href="../interfaces/IArgument.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/Argument.ts#L91">src/lib/structures/Argument.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/Argument.ts#L91">src/lib/structures/Argument.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

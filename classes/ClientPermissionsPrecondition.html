@@ -75,8 +75,8 @@
 						<dd><p>1.0.0</p>
 						</dd>
 						<dt>example</dt>
-						<dd><pre><code class="language-typescript"><span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">CoreCommand</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Command</span><span style="color: #24292E"> {</span>
-<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">PieceContext</span><span style="color: #24292E">) {</span>
+						<dd><pre><code class="language-typescript"><span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #E36209">CoreCommand</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #005CC5">Command</span><span style="color: #24292E"> {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">PieceContext</span><span style="color: #24292E">) {</span>
 <span style="color: #24292E">    </span><span style="color: #005CC5">super</span><span style="color: #24292E">(context, {</span>
 <span style="color: #24292E">      preconditions: [</span>
 <span style="color: #24292E">        </span><span style="color: #032F62">&#039;GuildOnly&#039;</span><span style="color: #24292E">,</span>
@@ -85,7 +85,7 @@
 <span style="color: #24292E">    });</span>
 <span style="color: #24292E">  }</span>
 
-<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">run</span><span style="color: #24292E">(</span><span style="color: #E36209">message</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Message</span><span style="color: #24292E">, </span><span style="color: #E36209">args</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Args</span><span style="color: #24292E">) {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">run</span><span style="color: #24292E">(</span><span style="color: #E36209">message</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">Message</span><span style="color: #24292E">, </span><span style="color: #E36209">args</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">Args</span><span style="color: #24292E">) {</span>
 <span style="color: #24292E">    </span><span style="color: #6A737D">// ...</span>
 <span style="color: #24292E">  }</span>
 <span style="color: #24292E">}</span>
@@ -140,7 +140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts#L33">src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts#L33">src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -173,7 +173,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/PreconditionSingleResolvableDetails.html">PreconditionSingleResolvableDetails</a>.<a href="../interfaces/PreconditionSingleResolvableDetails.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts#L27">src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts#L27">src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,7 +197,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/PreconditionSingleResolvableDetails.html">PreconditionSingleResolvableDetails</a>.<a href="../interfaces/PreconditionSingleResolvableDetails.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts#L26">src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts#L26">src/lib/utils/preconditions/containers/ClientPermissionsPrecondition.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

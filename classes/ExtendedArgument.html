@@ -82,14 +82,14 @@
 <span style="color: #D73A49">import</span><span style="color: #24292E"> </span><span style="color: #D73A49">type</span><span style="color: #24292E"> { Channel, TextChannel } </span><span style="color: #D73A49">from</span><span style="color: #24292E"> </span><span style="color: #032F62">&#039;discord.js&#039;</span><span style="color: #24292E">;</span>
 
 <span style="color: #6A737D">// Just like with `Argument`, you can use `export default` or `export =` too.</span>
-<span style="color: #24292E">(at)</span><span style="color: #6F42C1">ApplyOptions</span><span style="color: #24292E">&lt;</span><span style="color: #6F42C1">ExtendedArgumentOptions</span><span style="color: #24292E">&gt;({</span>
+<span style="color: #24292E">(at)</span><span style="color: #6F42C1">ApplyOptions</span><span style="color: #24292E">&lt;</span><span style="color: #E36209">ExtendedArgumentOptions</span><span style="color: #24292E">&gt;({</span>
 <span style="color: #24292E">  name: </span><span style="color: #032F62">&#039;textChannel&#039;</span><span style="color: #24292E">,</span>
 <span style="color: #24292E">  baseArgument: </span><span style="color: #032F62">&#039;channel&#039;</span>
 <span style="color: #24292E">})</span>
-<span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">TextChannelArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">ExtendedArgument</span><span style="color: #24292E">&lt;</span><span style="color: #032F62">&#039;channel&#039;</span><span style="color: #24292E">, </span><span style="color: #6F42C1">TextChannel</span><span style="color: #24292E">&gt; {</span>
-<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">handle</span><span style="color: #24292E">(</span><span style="color: #E36209">parsed</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">Channel</span><span style="color: #24292E">, { </span><span style="color: #E36209">argument</span><span style="color: #24292E"> }</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">ExtendedArgumentContext</span><span style="color: #24292E">)</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #6F42C1">ArgumentResult</span><span style="color: #24292E">&lt;</span><span style="color: #6F42C1">TextChannel</span><span style="color: #24292E">&gt; {</span>
+<span style="color: #D73A49">export</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #E36209">TextChannelArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #005CC5">ExtendedArgument</span><span style="color: #24292E">&lt;</span><span style="color: #032F62">&#039;channel&#039;</span><span style="color: #24292E">, </span><span style="color: #E36209">TextChannel</span><span style="color: #24292E">&gt; {</span>
+<span style="color: #24292E">  </span><span style="color: #D73A49">public</span><span style="color: #24292E"> </span><span style="color: #6F42C1">handle</span><span style="color: #24292E">(</span><span style="color: #E36209">parsed</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">Channel</span><span style="color: #24292E">, { </span><span style="color: #E36209">argument</span><span style="color: #24292E"> }</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">ExtendedArgumentContext</span><span style="color: #24292E">)</span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #E36209">ArgumentResult</span><span style="color: #24292E">&lt;</span><span style="color: #E36209">TextChannel</span><span style="color: #24292E">&gt; {</span>
 <span style="color: #24292E">    </span><span style="color: #D73A49">return</span><span style="color: #24292E"> parsed.type </span><span style="color: #D73A49">===</span><span style="color: #24292E"> </span><span style="color: #032F62">&#039;text&#039;</span>
-<span style="color: #24292E">      </span><span style="color: #D73A49">?</span><span style="color: #24292E"> </span><span style="color: #005CC5">this</span><span style="color: #24292E">.</span><span style="color: #6F42C1">ok</span><span style="color: #24292E">(parsed </span><span style="color: #D73A49">as</span><span style="color: #24292E"> </span><span style="color: #6F42C1">TextChannel</span><span style="color: #24292E">)</span>
+<span style="color: #24292E">      </span><span style="color: #D73A49">?</span><span style="color: #24292E"> </span><span style="color: #005CC5">this</span><span style="color: #24292E">.</span><span style="color: #6F42C1">ok</span><span style="color: #24292E">(parsed </span><span style="color: #D73A49">as</span><span style="color: #24292E"> </span><span style="color: #E36209">TextChannel</span><span style="color: #24292E">)</span>
 <span style="color: #24292E">      </span><span style="color: #D73A49">:</span><span style="color: #24292E"> </span><span style="color: #005CC5">this</span><span style="color: #24292E">.</span><span style="color: #6F42C1">error</span><span style="color: #24292E">({ identifier: </span><span style="color: #032F62">&#039;ArgumentTextChannelInvalidTextChannel&#039;</span><span style="color: #24292E">, message: </span><span style="color: #032F62">&#039;The argument did not resolve to a text channel.&#039;</span><span style="color: #24292E"> });</span>
 <span style="color: #24292E">  }</span>
 <span style="color: #24292E">}</span>
@@ -99,7 +99,7 @@
 						<dd><pre><code class="language-javascript"><span style="color: #6A737D">// JavaScript:</span>
 <span style="color: #D73A49">const</span><span style="color: #24292E"> { </span><span style="color: #005CC5">ExtendedArgument</span><span style="color: #24292E"> } </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #005CC5">require</span><span style="color: #24292E">(</span><span style="color: #032F62">&#039;@sapphire/framework&#039;</span><span style="color: #24292E">);</span>
 
-<span style="color: #005CC5">module</span><span style="color: #24292E">.</span><span style="color: #005CC5">exports</span><span style="color: #24292E"> </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #6F42C1">TextChannelArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #6F42C1">ExtendedArgument</span><span style="color: #24292E"> {</span>
+<span style="color: #005CC5">module</span><span style="color: #24292E">.</span><span style="color: #005CC5">exports</span><span style="color: #24292E"> </span><span style="color: #D73A49">=</span><span style="color: #24292E"> </span><span style="color: #D73A49">class</span><span style="color: #24292E"> </span><span style="color: #E36209">TextChannelArgument</span><span style="color: #24292E"> </span><span style="color: #D73A49">extends</span><span style="color: #24292E"> </span><span style="color: #005CC5">ExtendedArgument</span><span style="color: #24292E"> {</span>
 <span style="color: #24292E">  </span><span style="color: #D73A49">constructor</span><span style="color: #24292E">(</span><span style="color: #E36209">context</span><span style="color: #24292E">) {</span>
 <span style="color: #24292E">    </span><span style="color: #005CC5">super</span><span style="color: #24292E">(context, { name: </span><span style="color: #032F62">&#039;textChannel&#039;</span><span style="color: #24292E">, baseArgument: </span><span style="color: #032F62">&#039;channel&#039;</span><span style="color: #24292E"> });</span>
 <span style="color: #24292E">  }</span>
@@ -197,7 +197,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="Argument.html">Argument</a>.<a href="Argument.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/ExtendedArgument.ts#L55">src/lib/structures/ExtendedArgument.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/ExtendedArgument.ts#L55">src/lib/structures/ExtendedArgument.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -247,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">base<wbr>Argument<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/ExtendedArgument.ts#L53">src/lib/structures/ExtendedArgument.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/ExtendedArgument.ts#L53">src/lib/structures/ExtendedArgument.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -328,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/ExtendedArgument.ts#L64">src/lib/structures/ExtendedArgument.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/ExtendedArgument.ts#L64">src/lib/structures/ExtendedArgument.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,7 +382,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Argument.html">Argument</a>.<a href="Argument.html#error">error</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/Argument.ts#L107">src/lib/structures/Argument.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/Argument.ts#L107">src/lib/structures/Argument.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/ExtendedArgument.ts#L76">src/lib/structures/ExtendedArgument.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/ExtendedArgument.ts#L76">src/lib/structures/ExtendedArgument.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -437,7 +437,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Argument.html">Argument</a>.<a href="Argument.html#ok">ok</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/Argument.ts#L97">src/lib/structures/Argument.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/Argument.ts#L97">src/lib/structures/Argument.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -540,7 +540,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="Argument.html">Argument</a>.<a href="Argument.html#run">run</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/7a1c5c6/src/lib/structures/ExtendedArgument.ts#L68">src/lib/structures/ExtendedArgument.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/sapphiredev/framework/blob/9f81b7b/src/lib/structures/ExtendedArgument.ts#L68">src/lib/structures/ExtendedArgument.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
